@@ -18,7 +18,7 @@ class AuraApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'AURA Setup Test',
+      title: 'AURA Setup ',
       // REMOVED 'const' from here because the home page
       // might use Firebase values that aren't constant
       home: ConnectionTestPage(),
