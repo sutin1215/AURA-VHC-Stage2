@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'services/firebase_options.dart';
-// Imports for feature folders
+import 'core/app_theme.dart';
 import 'features/dashboard/dashboard_screen.dart';
-import 'features/auth/login_screen.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+void main() {
+  // We removed the Firebase initialization for now to focus on Frontend
   runApp(const AuraApp());
 }
 
@@ -19,11 +15,8 @@ class AuraApp extends StatelessWidget {
     return MaterialApp(
       title: 'AURA VHC',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-        colorSchemeSeed: Colors.teal, // AURA's primary color
-      ),
-      // Set the initial screen (Login or Dashboard)
+      // Uses the centralized theme we will create in Step 2
+      theme: AppTheme.lightTheme,
       home: const DashboardScreen(),
     );
   }

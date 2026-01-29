@@ -1,30 +1,29 @@
 name: aura_vhc
-description: "AURA Virtual Health Companion - Stage 2 Build"
-publish_to: 'none'
+description: "AURA Virtual Health Companion - Frontend Starter"
+publish_to: 'none' # Prevents accidental publishing to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.10.7
+  sdk: '>=3.1.0 <4.0.0' # Matches standard Flutter environments for 2026
 
 dependencies:
   flutter:
     sdk: flutter
 
-  # Firebase Core for initialization
-  firebase_core: ^3.10.1
-
-  # Cloud Firestore for health data and test messages
-  cloud_firestore: ^5.6.2
-
-  # Firebase Auth for the 2-step verification requirement
-  firebase_auth: ^5.4.4
-
+  # The following adds the Cupertino Icons font to your application.
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  # Recommended linting for clean code
   flutter_lints: ^3.0.0
 
 flutter:
+  # Ensures Material Design icons and components work correctly
   uses-material-design: true
+
+  # If you add images or logos later, you will list them under this 'assets' section:
+  # assets:
+  #   - assets/images/logo.png
