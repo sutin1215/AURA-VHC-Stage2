@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'core/app_theme.dart';
-import 'features/dashboard/dashboard_screen.dart';
+import 'theme/app_theme.dart';
+import 'screens/dashboard/dashboard_screen.dart';
 
 void main() {
   // We removed the Firebase initialization for now to focus on Frontend
